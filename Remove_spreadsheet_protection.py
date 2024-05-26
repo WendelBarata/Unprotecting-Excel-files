@@ -59,6 +59,6 @@ def remove_excel_protection(excel_file: Path,
     shutil.rmtree('temp_excel')
 
 
-arquivo_excel = r"C:\Users\wisaias\Downloads\teste_.xlsm"
-extension = "xlsm"
-remove_excel_protection(arquivo_excel, extension)
+excel_file = r"C:\Users\wnlba\Desktop\wendel\teste.xlsx" # noqa
+extension = excel_file.split('.')[-1]
+remove_excel_protection(excel_file, extension)

@@ -127,7 +127,8 @@ def remove_vba_password_from_bin(vba_content: bytes) -> bytes:
 
 # Path to the Excel file
 excel_file = Path(r"C:\Users\wisaias\Downloads\teste_.xlsm")
-extension = "xlsm"
+extension = excel_file.split('.')[-1]
+
 
 # Removing protection from the Excel file
 remove_all_excel_protection(excel_file, extension)

@@ -118,8 +118,8 @@ def remove_vba_password_from_bin(vba_content):
 
 
 # Path to the protected Excel file
-excel_path = Path(r"C:\Users\wisaias\Downloads\teste_.xlsm")
-extension = 'xlsm'
+excel_file = Path(r"C:\Users\wisaias\Downloads\teste_.xlsm")
+extension = excel_file.split('.')[-1]
 
 # Call the function
-remove_vba_project_password(excel_path, extension)
+remove_vba_project_password(excel_file, extension)
